@@ -1,0 +1,54 @@
+textarea {
+    min-height: 400px;
+}
+
+.email-item {
+    display: grid;
+    grid-template-columns: 15% 40% 20% 25%;
+    position: relative;
+    align-items: center;
+    height: 60px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.email-item:hover {
+    background-color: #f5f5f5;
+}
+
+.email-item.read {
+    background-color: #f0f0f0;
+}
+
+.email-item.unread {
+    font-weight: bold;
+}
+
+.email-item .sender {
+    max-width: 200px;
+    color: #555;
+
+}
+
+.email-item .subject {
+    margin-left: 16px;
+    color: #555;
+
+}
+
+.email-item .timestamp {
+    margin-left: 16px;
+    color: #999;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.archive {
+    width: 50%;
+    margin-left: 16px;
+    justify-self: end;
+}
+
